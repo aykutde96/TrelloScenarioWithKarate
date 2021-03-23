@@ -168,61 +168,56 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:3]</span><span class="scenario-name">Create board, get list and create one card.</span>
+<span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">Trello Scenario</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url 'https://api.trello.com/1/'</div>
-<div class="time-cell passed">0.002298</div>
+<div class="time-cell passed">0.003249</div>
 </div>
-<div class="preformatted">16:48:31.730 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">00:01:55.603 found scenario at line: 9 - ^Trello Scenario$
+00:01:55.717 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
 <div class="step-cell passed">* def boardNameRandom = 'adeBoardKarate';</div>
-<div class="time-cell passed">0.002752</div>
+<div class="time-cell passed">0.00308</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def listNameRandom = 'adeListKarate';</div>
-<div class="time-cell passed">0.001548</div>
+<div class="time-cell passed">0.00581</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def cardNameRandom = 'adeCardKarate';</div>
-<div class="time-cell passed">0.001552</div>
+<div class="time-cell passed">0.003002</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def cardNameRandom2 = 'adeCardKarate2';</div>
-<div class="time-cell passed">0.001538</div>
+<div class="time-cell passed">0.0031</div>
 </div>
-<div class="step-row">
-<div class="step-cell passed">* def updateCard =</div>
-<div class="time-cell passed">0.038117</div>
-</div>
-<div class="preformatted">{   "name": "CardUpdated"
-}</div>
 <div class="step-row">
 <div class="step-cell passed">Given path 'boards'</div>
-<div class="time-cell passed">0.002103</div>
+<div class="time-cell passed">0.004153</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And form field name = boardNameRandom</div>
-<div class="time-cell passed">0.000092</div>
+<div class="time-cell passed">0.000129</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And form field key = 'ba510fa50e0070fb70e629a6526e460b'</div>
-<div class="time-cell passed">0.002115</div>
+<div class="time-cell passed">0.002654</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And form field token = '3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93'</div>
-<div class="time-cell passed">0.002331</div>
+<div class="time-cell passed">0.002008</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* print url</div>
-<div class="time-cell passed">0.004489</div>
+<div class="time-cell passed">0.005113</div>
 </div>
-<div class="preformatted">16:48:31.792 [print]</div>
+<div class="preformatted">00:01:55.754 [print]</div>
 <div class="step-row">
 <div class="step-cell passed">When method post</div>
-<div class="time-cell passed">1.12341</div>
+<div class="time-cell passed">1.370528</div>
 </div>
-<div class="preformatted">16:48:32.157 request:
+<div class="preformatted">00:01:56.163 request:
 1 &gt; POST https://api.trello.com/1/boards
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -232,16 +227,16 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_282)
 name=adeBoardKarate&amp;key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93
 
-16:48:32.913 response time in milliseconds: 753,92
+00:01:57.045 response time in milliseconds: 877,91
 1 &lt; 200
 1 &lt; Access-Control-Allow-Headers: Authorization, Accept, Content-Type
 1 &lt; Access-Control-Allow-Methods: GET, PUT, POST, DELETE
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
-1 &lt; Atl-Traceid: 3159004a8dd4151c
+1 &lt; Atl-Traceid: 6f30153a0821e722
 1 &lt; Cache-Control: max-age=0, must-revalidate, no-cache, no-store
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 23 Mar 2021 13:48:32 GMT
+1 &lt; Date: Tue, 23 Mar 2021 21:01:57 GMT
 1 &lt; Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
 1 &lt; Expires: Thu, 01 Jan 1970 00:00:00
 1 &lt; Pragma: no-cache
@@ -253,7 +248,7 @@ name=adeBoardKarate&amp;key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f4117
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-Dns-Prefetch-Control: off
 1 &lt; X-Download-Options: noopen
-1 &lt; X-Envoy-Upstream-Service-Time: 214
+1 &lt; X-Envoy-Upstream-Service-Time: 205
 1 &lt; X-Frame-Options: DENY
 1 &lt; X-Logging-Id: 7a01fdce-4547-49f0-9059-3b05dad7c9ba
 1 &lt; X-Permitted-Cross-Domain-Policies: none
@@ -269,22 +264,22 @@ name=adeBoardKarate&amp;key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f4117
 1 &lt; X-Rate-Limit-Member-Interval-Ms: 10000
 1 &lt; X-Rate-Limit-Member-Max: 200
 1 &lt; X-Rate-Limit-Member-Remaining: 199
-1 &lt; X-Server-Time: 1616507312839
+1 &lt; X-Server-Time: 1616533317039
 1 &lt; X-Trello-Api-Org-Selected: true
 1 &lt; X-Trello-Environment: Production
-1 &lt; X-Trello-Version: 1.2387.0
+1 &lt; X-Trello-Version: 1.2389.1
 1 &lt; X-Xss-Protection: 1; mode=block
-{"id":"6059f1b0c0aada5b10d508de","name":"adeBoardKarate","desc":"","descData":null,"closed":false,"idOrganization":"6054f93f92789370f4c4dac9","idEnterprise":null,"pinned":false,"url":"https://trello.com/b/zNlht8xV/adeboardkarate","shortUrl":"https://trello.com/b/zNlht8xV","prefs":{"permissionLevel":"private","hideVotes":false,"voting":"disabled","comments":"members","invitations":"members","selfJoin":true,"cardCovers":true,"isTemplate":false,"cardAging":"regular","calendarFeedEnabled":false,"background":"blue","backgroundImage":null,"backgroundImageScaled":null,"backgroundTile":false,"backgroundBrightness":"dark","backgroundColor":"#0079BF","backgroundBottomColor":"#0079BF","backgroundTopColor":"#0079BF","canBePublic":true,"canBeEnterprise":true,"canBeOrg":true,"canBePrivate":true,"canInvite":true},"labelNames":{"green":"","yellow":"","orange":"","red":"","purple":"","blue":"","sky":"","lime":"","pink":"","black":""},"limits":{}}</div>
+{"id":"605a574482597b7dd6ca1a7e","name":"adeBoardKarate","desc":"","descData":null,"closed":false,"idOrganization":"6054f93f92789370f4c4dac9","idEnterprise":null,"pinned":false,"url":"https://trello.com/b/Y6sYQTZi/adeboardkarate","shortUrl":"https://trello.com/b/Y6sYQTZi","prefs":{"permissionLevel":"private","hideVotes":false,"voting":"disabled","comments":"members","invitations":"members","selfJoin":true,"cardCovers":true,"isTemplate":false,"cardAging":"regular","calendarFeedEnabled":false,"background":"blue","backgroundImage":null,"backgroundImageScaled":null,"backgroundTile":false,"backgroundBrightness":"dark","backgroundColor":"#0079BF","backgroundBottomColor":"#0079BF","backgroundTopColor":"#0079BF","canBePublic":true,"canBeEnterprise":true,"canBeOrg":true,"canBePrivate":true,"canInvite":true},"labelNames":{"green":"","yellow":"","orange":"","red":"","purple":"","blue":"","sky":"","lime":"","pink":"","black":""},"limits":{}}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000018</div>
+<div class="time-cell passed">0.000047</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And print response</div>
-<div class="time-cell passed">0.000624</div>
+<div class="time-cell passed">0.013732</div>
 </div>
-<div class="preformatted">16:48:32.917 [print] {
-  "id": "6059f1b0c0aada5b10d508de",
+<div class="preformatted">00:01:57.139 [print] {
+  "id": "605a574482597b7dd6ca1a7e",
   "name": "adeBoardKarate",
   "desc": "",
   "descData": null,
@@ -292,8 +287,8 @@ name=adeBoardKarate&amp;key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f4117
   "idOrganization": "6054f93f92789370f4c4dac9",
   "idEnterprise": null,
   "pinned": false,
-  "url": "https://trello.com/b/zNlht8xV/adeboardkarate",
-  "shortUrl": "https://trello.com/b/zNlht8xV",
+  "url": "https://trello.com/b/Y6sYQTZi/adeboardkarate",
+  "shortUrl": "https://trello.com/b/Y6sYQTZi",
   "prefs": {
     "permissionLevel": "private",
     "hideVotes": false,
@@ -336,39 +331,39 @@ name=adeBoardKarate&amp;key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f4117
 }</div>
 <div class="step-row">
 <div class="step-cell passed">* def json = response</div>
-<div class="time-cell passed">0.000019</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* def idCreatedBoard = get json.id</div>
-<div class="time-cell passed">0.000557</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">Given path 'boards/' + idCreatedBoard + '/lists'</div>
-<div class="time-cell passed">0.00371</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">And form field name = listNameRandom</div>
 <div class="time-cell passed">0.000021</div>
 </div>
 <div class="step-row">
+<div class="step-cell passed">* def idCreatedBoard = get json.id</div>
+<div class="time-cell passed">0.00044</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">Given path 'boards/' + idCreatedBoard + '/lists'</div>
+<div class="time-cell passed">0.004696</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And form field name = listNameRandom</div>
+<div class="time-cell passed">0.000026</div>
+</div>
+<div class="step-row">
 <div class="step-cell passed">And form field key = 'ba510fa50e0070fb70e629a6526e460b'</div>
-<div class="time-cell passed">0.00013</div>
+<div class="time-cell passed">0.000169</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And form field token = '3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93'</div>
-<div class="time-cell passed">0.000089</div>
+<div class="time-cell passed">0.000206</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* print url</div>
-<div class="time-cell passed">0.000493</div>
+<div class="time-cell passed">0.000664</div>
 </div>
-<div class="preformatted">16:48:32.922 [print]</div>
+<div class="preformatted">00:01:57.146 [print]</div>
 <div class="step-row">
 <div class="step-cell passed">When method post</div>
-<div class="time-cell passed">0.528025</div>
+<div class="time-cell passed">0.437364</div>
 </div>
-<div class="preformatted">16:48:32.923 request:
-2 &gt; POST https://api.trello.com/1/boards/6059f1b0c0aada5b10d508de/lists
+<div class="preformatted">00:01:57.148 request:
+2 &gt; POST https://api.trello.com/1/boards/605a574482597b7dd6ca1a7e/lists
 2 &gt; Accept-Encoding: gzip,deflate
 2 &gt; Connection: Keep-Alive
 2 &gt; Content-Length: 126
@@ -377,16 +372,16 @@ name=adeBoardKarate&amp;key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f4117
 2 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_282)
 name=adeListKarate&amp;key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93
 
-16:48:33.450 response time in milliseconds: 525,75
+00:01:57.584 response time in milliseconds: 434,71
 2 &lt; 200
 2 &lt; Access-Control-Allow-Headers: Authorization, Accept, Content-Type
 2 &lt; Access-Control-Allow-Methods: GET, PUT, POST, DELETE
 2 &lt; Access-Control-Allow-Origin: *
 2 &lt; Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
-2 &lt; Atl-Traceid: b3c68e64be201261
+2 &lt; Atl-Traceid: 760d726d2ef7fec6
 2 &lt; Cache-Control: max-age=0, must-revalidate, no-cache, no-store
 2 &lt; Content-Type: application/json; charset=utf-8
-2 &lt; Date: Tue, 23 Mar 2021 13:48:33 GMT
+2 &lt; Date: Tue, 23 Mar 2021 21:01:57 GMT
 2 &lt; Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
 2 &lt; Expires: Thu, 01 Jan 1970 00:00:00
 2 &lt; Pragma: no-cache
@@ -398,7 +393,7 @@ name=adeListKarate&amp;key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f41172
 2 &lt; X-Content-Type-Options: nosniff
 2 &lt; X-Dns-Prefetch-Control: off
 2 &lt; X-Download-Options: noopen
-2 &lt; X-Envoy-Upstream-Service-Time: 336
+2 &lt; X-Envoy-Upstream-Service-Time: 156
 2 &lt; X-Frame-Options: DENY
 2 &lt; X-Logging-Id: 7a01fdce-4547-49f0-9059-3b05dad7c9ba
 2 &lt; X-Permitted-Cross-Domain-Policies: none
@@ -414,61 +409,61 @@ name=adeListKarate&amp;key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f41172
 2 &lt; X-Rate-Limit-Member-Interval-Ms: 10000
 2 &lt; X-Rate-Limit-Member-Max: 200
 2 &lt; X-Rate-Limit-Member-Remaining: 197
-2 &lt; X-Server-Time: 1616507313403
+2 &lt; X-Server-Time: 1616533317598
 2 &lt; X-Trello-Environment: Production
-2 &lt; X-Trello-Version: 1.2387.0
+2 &lt; X-Trello-Version: 1.2389.1
 2 &lt; X-Xss-Protection: 1; mode=block
-{"id":"6059f1b16144c1232b94fa9e","name":"adeListKarate","closed":false,"pos":8192,"idBoard":"6059f1b0c0aada5b10d508de","limits":{}}</div>
+{"id":"605a5745cbed6a67eb2ced67","name":"adeListKarate","closed":false,"pos":8192,"idBoard":"605a574482597b7dd6ca1a7e","limits":{}}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000007</div>
+<div class="time-cell passed">0.000015</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And print response</div>
-<div class="time-cell passed">0.000159</div>
+<div class="time-cell passed">0.00057</div>
 </div>
-<div class="preformatted">16:48:33.450 [print] {
-  "id": "6059f1b16144c1232b94fa9e",
+<div class="preformatted">00:01:57.586 [print] {
+  "id": "605a5745cbed6a67eb2ced67",
   "name": "adeListKarate",
   "closed": false,
   "pos": 8192,
-  "idBoard": "6059f1b0c0aada5b10d508de",
+  "idBoard": "605a574482597b7dd6ca1a7e",
   "limits": {
   }
 }</div>
 <div class="step-row">
 <div class="step-cell passed">* def json = response</div>
-<div class="time-cell passed">0.00001</div>
+<div class="time-cell passed">0.000019</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def idCreatedList = get json.id</div>
-<div class="time-cell passed">0.000124</div>
+<div class="time-cell passed">0.000224</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given path 'cards/'</div>
-<div class="time-cell passed">0.001535</div>
+<div class="time-cell passed">0.003004</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And form field name = cardNameRandom</div>
-<div class="time-cell passed">0.000017</div>
+<div class="time-cell passed">0.000026</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And form field idList = idCreatedList</div>
-<div class="time-cell passed">0.000007</div>
+<div class="time-cell passed">0.000028</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And form field key = 'ba510fa50e0070fb70e629a6526e460b'</div>
-<div class="time-cell passed">0.000099</div>
+<div class="time-cell passed">0.000732</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And form field token = '3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93'</div>
-<div class="time-cell passed">0.000092</div>
+<div class="time-cell passed">0.000679</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method post</div>
-<div class="time-cell passed">0.443176</div>
+<div class="time-cell passed">0.512467</div>
 </div>
-<div class="preformatted">16:48:33.454 request:
+<div class="preformatted">00:01:57.595 request:
 3 &gt; POST https://api.trello.com/1/cards/
 3 &gt; Accept-Encoding: gzip,deflate
 3 &gt; Connection: Keep-Alive
@@ -476,18 +471,18 @@ name=adeListKarate&amp;key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f41172
 3 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
 3 &gt; Host: api.trello.com
 3 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_282)
-name=adeCardKarate&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93
+name=adeCardKarate&amp;idList=605a5745cbed6a67eb2ced67&amp;key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93
 
-16:48:33.895 response time in milliseconds: 438,45
+00:01:58.103 response time in milliseconds: 507,30
 3 &lt; 200
 3 &lt; Access-Control-Allow-Headers: Authorization, Accept, Content-Type
 3 &lt; Access-Control-Allow-Methods: GET, PUT, POST, DELETE
 3 &lt; Access-Control-Allow-Origin: *
 3 &lt; Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
-3 &lt; Atl-Traceid: 0edc9399d8a2ddcf
+3 &lt; Atl-Traceid: 1a87cc5dfd94d4df
 3 &lt; Cache-Control: max-age=0, must-revalidate, no-cache, no-store
 3 &lt; Content-Type: application/json; charset=utf-8
-3 &lt; Date: Tue, 23 Mar 2021 13:48:33 GMT
+3 &lt; Date: Tue, 23 Mar 2021 21:01:58 GMT
 3 &lt; Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
 3 &lt; Expires: Thu, 01 Jan 1970 00:00:00
 3 &lt; Pragma: no-cache
@@ -499,7 +494,7 @@ name=adeCardKarate&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb7
 3 &lt; X-Content-Type-Options: nosniff
 3 &lt; X-Dns-Prefetch-Control: off
 3 &lt; X-Download-Options: noopen
-3 &lt; X-Envoy-Upstream-Service-Time: 226
+3 &lt; X-Envoy-Upstream-Service-Time: 257
 3 &lt; X-Frame-Options: DENY
 3 &lt; X-Logging-Id: 7a01fdce-4547-49f0-9059-3b05dad7c9ba
 3 &lt; X-Permitted-Cross-Domain-Policies: none
@@ -515,33 +510,33 @@ name=adeCardKarate&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb7
 3 &lt; X-Rate-Limit-Member-Interval-Ms: 10000
 3 &lt; X-Rate-Limit-Member-Max: 200
 3 &lt; X-Rate-Limit-Member-Remaining: 196
-3 &lt; X-Server-Time: 1616507313836
+3 &lt; X-Server-Time: 1616533318125
 3 &lt; X-Trello-Environment: Production
-3 &lt; X-Trello-Version: 1.2387.0
+3 &lt; X-Trello-Version: 1.2389.1
 3 &lt; X-Xss-Protection: 1; mode=block
-{"id":"6059f1b118da836dd6712018","checkItemStates":[],"closed":false,"dateLastActivity":"2021-03-23T13:48:33.770Z","desc":"","descData":{"emoji":{}},"dueReminder":null,"idBoard":"6059f1b0c0aada5b10d508de","idList":"6059f1b16144c1232b94fa9e","idMembersVoted":[],"idShort":1,"idAttachmentCover":null,"idLabels":[],"manualCoverAttachment":false,"name":"adeCardKarate","pos":16384,"shortLink":"gPwe0Qkn","isTemplate":false,"cardRole":null,"dueComplete":false,"due":null,"email":null,"labels":[],"shortUrl":"https://trello.com/c/gPwe0Qkn","start":null,"url":"https://trello.com/c/gPwe0Qkn/1-adecardkarate","cover":{"idAttachment":null,"color":null,"idUploadedBackground":null,"size":"normal","brightness":"light","idPlugin":null},"idMembers":[],"idChecklists":[],"attachments":[],"badges":{"attachmentsByType":{"trello":{"board":0,"card":0}},"location":false,"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"checkItemsEarliestDue":null,"comments":0,"attachments":0,"description":false,"due":null,"dueComplete":false,"start":null},"subscribed":false,"stickers":[],"limits":{}}</div>
+{"id":"605a57463996c250eec39e41","checkItemStates":[],"closed":false,"dateLastActivity":"2021-03-23T21:01:58.039Z","desc":"","descData":{"emoji":{}},"dueReminder":null,"idBoard":"605a574482597b7dd6ca1a7e","idList":"605a5745cbed6a67eb2ced67","idMembersVoted":[],"idShort":1,"idAttachmentCover":null,"idLabels":[],"manualCoverAttachment":false,"name":"adeCardKarate","pos":16384,"shortLink":"x8v5i79v","isTemplate":false,"cardRole":null,"dueComplete":false,"due":null,"email":null,"labels":[],"shortUrl":"https://trello.com/c/x8v5i79v","start":null,"url":"https://trello.com/c/x8v5i79v/1-adecardkarate","cover":{"idAttachment":null,"color":null,"idUploadedBackground":null,"size":"normal","brightness":"dark","idPlugin":null},"idMembers":[],"idChecklists":[],"badges":{"attachmentsByType":{"trello":{"board":0,"card":0}},"location":false,"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"checkItemsEarliestDue":null,"comments":0,"attachments":0,"description":false,"due":null,"dueComplete":false,"start":null},"subscribed":false,"attachments":[],"stickers":[],"limits":{}}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000024</div>
+<div class="time-cell passed">0.000008</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And print response</div>
-<div class="time-cell passed">0.001273</div>
+<div class="time-cell passed">0.000472</div>
 </div>
-<div class="preformatted">16:48:33.897 [print] {
-  "id": "6059f1b118da836dd6712018",
+<div class="preformatted">00:01:58.104 [print] {
+  "id": "605a57463996c250eec39e41",
   "checkItemStates": [
   ],
   "closed": false,
-  "dateLastActivity": "2021-03-23T13:48:33.770Z",
+  "dateLastActivity": "2021-03-23T21:01:58.039Z",
   "desc": "",
   "descData": {
     "emoji": {
     }
   },
   "dueReminder": null,
-  "idBoard": "6059f1b0c0aada5b10d508de",
-  "idList": "6059f1b16144c1232b94fa9e",
+  "idBoard": "605a574482597b7dd6ca1a7e",
+  "idList": "605a5745cbed6a67eb2ced67",
   "idMembersVoted": [
   ],
   "idShort": 1,
@@ -551,7 +546,7 @@ name=adeCardKarate&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb7
   "manualCoverAttachment": false,
   "name": "adeCardKarate",
   "pos": 16384,
-  "shortLink": "gPwe0Qkn",
+  "shortLink": "x8v5i79v",
   "isTemplate": false,
   "cardRole": null,
   "dueComplete": false,
@@ -559,22 +554,20 @@ name=adeCardKarate&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb7
   "email": null,
   "labels": [
   ],
-  "shortUrl": "https://trello.com/c/gPwe0Qkn",
+  "shortUrl": "https://trello.com/c/x8v5i79v",
   "start": null,
-  "url": "https://trello.com/c/gPwe0Qkn/1-adecardkarate",
+  "url": "https://trello.com/c/x8v5i79v/1-adecardkarate",
   "cover": {
     "idAttachment": null,
     "color": null,
     "idUploadedBackground": null,
     "size": "normal",
-    "brightness": "light",
+    "brightness": "dark",
     "idPlugin": null
   },
   "idMembers": [
   ],
   "idChecklists": [
-  ],
-  "attachments": [
   ],
   "badges": {
     "attachmentsByType": {
@@ -599,6 +592,8 @@ name=adeCardKarate&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb7
     "start": null
   },
   "subscribed": false,
+  "attachments": [
+  ],
   "stickers": [
   ],
   "limits": {
@@ -606,37 +601,37 @@ name=adeCardKarate&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb7
 }</div>
 <div class="step-row">
 <div class="step-cell passed">* def resBody = response</div>
-<div class="time-cell passed">0.000043</div>
+<div class="time-cell passed">0.000016</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def idCreatedCard = get resBody.id</div>
-<div class="time-cell passed">0.00036</div>
+<div class="time-cell passed">0.00011</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given path 'cards/'</div>
-<div class="time-cell passed">0.000304</div>
+<div class="time-cell passed">0.000139</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And form field name = cardNameRandom2</div>
-<div class="time-cell passed">0.000029</div>
+<div class="time-cell passed">0.00001</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And form field idList = idCreatedList</div>
-<div class="time-cell passed">0.00002</div>
+<div class="time-cell passed">0.000006</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And form field key = 'ba510fa50e0070fb70e629a6526e460b'</div>
-<div class="time-cell passed">0.00022</div>
+<div class="time-cell passed">0.00011</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And form field token = '3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93'</div>
-<div class="time-cell passed">0.000191</div>
+<div class="time-cell passed">0.000074</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method post</div>
-<div class="time-cell passed">0.445717</div>
+<div class="time-cell passed">0.411118</div>
 </div>
-<div class="preformatted">16:48:33.903 request:
+<div class="preformatted">00:01:58.106 request:
 4 &gt; POST https://api.trello.com/1/cards/
 4 &gt; Accept-Encoding: gzip,deflate
 4 &gt; Connection: Keep-Alive
@@ -644,18 +639,18 @@ name=adeCardKarate&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb7
 4 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
 4 &gt; Host: api.trello.com
 4 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_282)
-name=adeCardKarate2&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93
+name=adeCardKarate2&amp;idList=605a5745cbed6a67eb2ced67&amp;key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93
 
-16:48:34.345 response time in milliseconds: 439,96
+00:01:58.515 response time in milliseconds: 408,45
 4 &lt; 200
 4 &lt; Access-Control-Allow-Headers: Authorization, Accept, Content-Type
 4 &lt; Access-Control-Allow-Methods: GET, PUT, POST, DELETE
 4 &lt; Access-Control-Allow-Origin: *
 4 &lt; Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
-4 &lt; Atl-Traceid: ca09ca5ea5800a77
+4 &lt; Atl-Traceid: 8dd5b69fb94c1636
 4 &lt; Cache-Control: max-age=0, must-revalidate, no-cache, no-store
 4 &lt; Content-Type: application/json; charset=utf-8
-4 &lt; Date: Tue, 23 Mar 2021 13:48:34 GMT
+4 &lt; Date: Tue, 23 Mar 2021 21:01:58 GMT
 4 &lt; Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
 4 &lt; Expires: Thu, 01 Jan 1970 00:00:00
 4 &lt; Pragma: no-cache
@@ -667,7 +662,7 @@ name=adeCardKarate2&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb
 4 &lt; X-Content-Type-Options: nosniff
 4 &lt; X-Dns-Prefetch-Control: off
 4 &lt; X-Download-Options: noopen
-4 &lt; X-Envoy-Upstream-Service-Time: 222
+4 &lt; X-Envoy-Upstream-Service-Time: 210
 4 &lt; X-Frame-Options: DENY
 4 &lt; X-Logging-Id: 7a01fdce-4547-49f0-9059-3b05dad7c9ba
 4 &lt; X-Permitted-Cross-Domain-Policies: none
@@ -683,33 +678,33 @@ name=adeCardKarate2&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb
 4 &lt; X-Rate-Limit-Member-Interval-Ms: 10000
 4 &lt; X-Rate-Limit-Member-Max: 200
 4 &lt; X-Rate-Limit-Member-Remaining: 195
-4 &lt; X-Server-Time: 1616507314282
+4 &lt; X-Server-Time: 1616533318535
 4 &lt; X-Trello-Environment: Production
-4 &lt; X-Trello-Version: 1.2387.0
+4 &lt; X-Trello-Version: 1.2389.1
 4 &lt; X-Xss-Protection: 1; mode=block
-{"id":"6059f1b22e07258fcba537d9","checkItemStates":[],"closed":false,"dateLastActivity":"2021-03-23T13:48:34.211Z","desc":"","descData":{"emoji":{}},"dueReminder":null,"idBoard":"6059f1b0c0aada5b10d508de","idList":"6059f1b16144c1232b94fa9e","idMembersVoted":[],"idShort":2,"idAttachmentCover":null,"idLabels":[],"manualCoverAttachment":false,"name":"adeCardKarate2","pos":32768,"shortLink":"jaSrDUlF","isTemplate":false,"cardRole":null,"dueComplete":false,"due":null,"email":null,"labels":[],"shortUrl":"https://trello.com/c/jaSrDUlF","start":null,"url":"https://trello.com/c/jaSrDUlF/2-adecardkarate2","cover":{"idAttachment":null,"color":null,"idUploadedBackground":null,"size":"normal","brightness":"light","idPlugin":null},"idMembers":[],"idChecklists":[],"badges":{"attachmentsByType":{"trello":{"board":0,"card":0}},"location":false,"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"checkItemsEarliestDue":null,"comments":0,"attachments":0,"description":false,"due":null,"dueComplete":false,"start":null},"subscribed":false,"attachments":[],"stickers":[],"limits":{}}</div>
+{"id":"605a5746d4a177349812a21a","checkItemStates":[],"closed":false,"dateLastActivity":"2021-03-23T21:01:58.466Z","desc":"","descData":{"emoji":{}},"dueReminder":null,"idBoard":"605a574482597b7dd6ca1a7e","idList":"605a5745cbed6a67eb2ced67","idMembersVoted":[],"idShort":2,"idAttachmentCover":null,"idLabels":[],"manualCoverAttachment":false,"name":"adeCardKarate2","pos":32768,"shortLink":"Iq8QuSXm","isTemplate":false,"cardRole":null,"dueComplete":false,"due":null,"email":null,"labels":[],"shortUrl":"https://trello.com/c/Iq8QuSXm","start":null,"url":"https://trello.com/c/Iq8QuSXm/2-adecardkarate2","cover":{"idAttachment":null,"color":null,"idUploadedBackground":null,"size":"normal","brightness":"dark","idPlugin":null},"idMembers":[],"badges":{"attachmentsByType":{"trello":{"board":0,"card":0}},"location":false,"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"checkItemsEarliestDue":null,"comments":0,"attachments":0,"description":false,"due":null,"dueComplete":false,"start":null},"subscribed":false,"attachments":[],"idChecklists":[],"stickers":[],"limits":{}}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000022</div>
+<div class="time-cell passed">0.00001</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And print response</div>
-<div class="time-cell passed">0.001256</div>
+<div class="time-cell passed">0.000749</div>
 </div>
-<div class="preformatted">16:48:34.348 [print] {
-  "id": "6059f1b22e07258fcba537d9",
+<div class="preformatted">00:01:58.517 [print] {
+  "id": "605a5746d4a177349812a21a",
   "checkItemStates": [
   ],
   "closed": false,
-  "dateLastActivity": "2021-03-23T13:48:34.211Z",
+  "dateLastActivity": "2021-03-23T21:01:58.466Z",
   "desc": "",
   "descData": {
     "emoji": {
     }
   },
   "dueReminder": null,
-  "idBoard": "6059f1b0c0aada5b10d508de",
-  "idList": "6059f1b16144c1232b94fa9e",
+  "idBoard": "605a574482597b7dd6ca1a7e",
+  "idList": "605a5745cbed6a67eb2ced67",
   "idMembersVoted": [
   ],
   "idShort": 2,
@@ -719,7 +714,7 @@ name=adeCardKarate2&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb
   "manualCoverAttachment": false,
   "name": "adeCardKarate2",
   "pos": 32768,
-  "shortLink": "jaSrDUlF",
+  "shortLink": "Iq8QuSXm",
   "isTemplate": false,
   "cardRole": null,
   "dueComplete": false,
@@ -727,20 +722,18 @@ name=adeCardKarate2&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb
   "email": null,
   "labels": [
   ],
-  "shortUrl": "https://trello.com/c/jaSrDUlF",
+  "shortUrl": "https://trello.com/c/Iq8QuSXm",
   "start": null,
-  "url": "https://trello.com/c/jaSrDUlF/2-adecardkarate2",
+  "url": "https://trello.com/c/Iq8QuSXm/2-adecardkarate2",
   "cover": {
     "idAttachment": null,
     "color": null,
     "idUploadedBackground": null,
     "size": "normal",
-    "brightness": "light",
+    "brightness": "dark",
     "idPlugin": null
   },
   "idMembers": [
-  ],
-  "idChecklists": [
   ],
   "badges": {
     "attachmentsByType": {
@@ -767,6 +760,8 @@ name=adeCardKarate2&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb
   "subscribed": false,
   "attachments": [
   ],
+  "idChecklists": [
+  ],
   "stickers": [
   ],
   "limits": {
@@ -774,34 +769,38 @@ name=adeCardKarate2&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb
 }</div>
 <div class="step-row">
 <div class="step-cell passed">* def resBody2 = response</div>
-<div class="time-cell passed">0.000059</div>
+<div class="time-cell passed">0.000026</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def idCreatedCard2 = get resBody2.id</div>
-<div class="time-cell passed">0.000606</div>
+<div class="time-cell passed">0.000182</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given path 'cards/' + idCreatedCard</div>
-<div class="time-cell passed">0.005913</div>
+<div class="time-cell passed">0.002435</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And param name = 'Updated name'</div>
+<div class="time-cell passed">0.001994</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And form field key = 'ba510fa50e0070fb70e629a6526e460b'</div>
-<div class="time-cell passed">0.00027</div>
+<div class="time-cell passed">0.000112</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And form field token = '3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93'</div>
-<div class="time-cell passed">0.000877</div>
+<div class="time-cell passed">0.000414</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">And request name = 'UpdateCard'</div>
-<div class="time-cell passed">0.007444</div>
+<div class="step-cell passed">And request ''</div>
+<div class="time-cell passed">0.001584</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method put</div>
-<div class="time-cell passed">0.34438</div>
+<div class="time-cell passed">0.30455</div>
 </div>
-<div class="preformatted">16:48:34.366 request:
-5 &gt; PUT https://api.trello.com/1/cards/6059f1b118da836dd6712018
+<div class="preformatted">00:01:58.526 request:
+5 &gt; PUT https://api.trello.com/1/cards/605a57463996c250eec39e41?name=Updated+name
 5 &gt; Accept-Encoding: gzip,deflate
 5 &gt; Connection: Keep-Alive
 5 &gt; Content-Length: 107
@@ -810,16 +809,16 @@ name=adeCardKarate2&amp;idList=6059f1b16144c1232b94fa9e&amp;key=ba510fa50e0070fb
 5 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_282)
 key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93
 
-16:48:34.708 response time in milliseconds: 341,21
+00:01:58.829 response time in milliseconds: 301,29
 5 &lt; 200
 5 &lt; Access-Control-Allow-Headers: Authorization, Accept, Content-Type
 5 &lt; Access-Control-Allow-Methods: GET, PUT, POST, DELETE
 5 &lt; Access-Control-Allow-Origin: *
 5 &lt; Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
-5 &lt; Atl-Traceid: 20de84f373d9ddf9
+5 &lt; Atl-Traceid: 876352f08ec13f29
 5 &lt; Cache-Control: max-age=0, must-revalidate, no-cache, no-store
 5 &lt; Content-Type: application/json; charset=utf-8
-5 &lt; Date: Tue, 23 Mar 2021 13:48:34 GMT
+5 &lt; Date: Tue, 23 Mar 2021 21:01:58 GMT
 5 &lt; Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
 5 &lt; Expires: Thu, 01 Jan 1970 00:00:00
 5 &lt; Pragma: no-cache
@@ -831,7 +830,7 @@ key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f41172d51526afe89a2dab31be4cc
 5 &lt; X-Content-Type-Options: nosniff
 5 &lt; X-Dns-Prefetch-Control: off
 5 &lt; X-Download-Options: noopen
-5 &lt; X-Envoy-Upstream-Service-Time: 130
+5 &lt; X-Envoy-Upstream-Service-Time: 154
 5 &lt; X-Frame-Options: DENY
 5 &lt; X-Logging-Id: 7a01fdce-4547-49f0-9059-3b05dad7c9ba
 5 &lt; X-Permitted-Cross-Domain-Policies: none
@@ -847,14 +846,14 @@ key=ba510fa50e0070fb70e629a6526e460b&amp;token=3286f41172d51526afe89a2dab31be4cc
 5 &lt; X-Rate-Limit-Member-Interval-Ms: 10000
 5 &lt; X-Rate-Limit-Member-Max: 200
 5 &lt; X-Rate-Limit-Member-Remaining: 194
-5 &lt; X-Server-Time: 1616507314657
+5 &lt; X-Server-Time: 1616533318851
 5 &lt; X-Trello-Environment: Production
-5 &lt; X-Trello-Version: 1.2387.0
+5 &lt; X-Trello-Version: 1.2389.1
 5 &lt; X-Xss-Protection: 1; mode=block
-{"id":"6059f1b118da836dd6712018","checkItemStates":[],"closed":false,"dateLastActivity":"2021-03-23T13:48:33.770Z","desc":"","descData":null,"dueReminder":null,"idBoard":"6059f1b0c0aada5b10d508de","idList":"6059f1b16144c1232b94fa9e","idMembersVoted":[],"idShort":1,"idAttachmentCover":null,"idLabels":[],"manualCoverAttachment":false,"name":"adeCardKarate","pos":16384,"shortLink":"gPwe0Qkn","isTemplate":false,"cardRole":null,"dueComplete":false,"due":null,"email":null,"labels":[],"shortUrl":"https://trello.com/c/gPwe0Qkn","start":null,"url":"https://trello.com/c/gPwe0Qkn/1-adecardkarate","cover":{"idAttachment":null,"color":null,"idUploadedBackground":null,"size":"normal","brightness":"light","idPlugin":null},"idMembers":[],"badges":{"attachmentsByType":{"trello":{"board":0,"card":0}},"location":false,"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"checkItemsEarliestDue":null,"comments":0,"attachments":0,"description":false,"due":null,"dueComplete":false,"start":null},"subscribed":false,"idChecklists":[]}</div>
+{"id":"605a57463996c250eec39e41","checkItemStates":[],"closed":false,"dateLastActivity":"2021-03-23T21:01:58.807Z","desc":"","descData":null,"dueReminder":null,"idBoard":"605a574482597b7dd6ca1a7e","idList":"605a5745cbed6a67eb2ced67","idMembersVoted":[],"idShort":1,"idAttachmentCover":null,"idLabels":[],"manualCoverAttachment":false,"name":"Updated name","pos":16384,"shortLink":"x8v5i79v","isTemplate":false,"cardRole":null,"dueComplete":false,"due":null,"email":null,"labels":[],"shortUrl":"https://trello.com/c/x8v5i79v","start":null,"url":"https://trello.com/c/x8v5i79v/1-updated-name","cover":{"idAttachment":null,"color":null,"idUploadedBackground":null,"size":"normal","brightness":"dark","idPlugin":null},"idMembers":[],"badges":{"attachmentsByType":{"trello":{"board":0,"card":0}},"location":false,"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"checkItemsEarliestDue":null,"comments":0,"attachments":0,"description":false,"due":null,"dueComplete":false,"start":null},"subscribed":false,"idChecklists":[]}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.00001</div>
+<div class="time-cell passed">0.000009</div>
 </div>
 </div>
 </div>

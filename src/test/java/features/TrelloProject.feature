@@ -1,11 +1,14 @@
 Feature: Preconditions for boards api tests
 
-  Scenario: Create board, get list and create one card.
-    * url 'https://api.trello.com/1/'
-    * def boardNameRandom = 'adeBoardKarate';
-    * def listNameRandom = 'adeListKarate';
-    * def cardNameRandom = 'adeCardKarate';
-    * def cardNameRandom2 = 'adeCardKarate2';
+Background:
+
+  * url 'https://api.trello.com/1/'
+  * def boardNameRandom = 'adeBoardKarate';
+  * def listNameRandom = 'adeListKarate';
+  * def cardNameRandom = 'adeCardKarate';
+  * def cardNameRandom2 = 'adeCardKarate2';
+
+  Scenario: Trello Scenario
 
     Given path 'boards'
     And form field name = boardNameRandom
@@ -18,6 +21,8 @@ Feature: Preconditions for boards api tests
     * def json = response
     * def idCreatedBoard = get json.id
 
+ # Scenario: Create List
+
     Given path 'boards/' + idCreatedBoard + '/lists'
     And form field name = listNameRandom
     And form field key = 'ba510fa50e0070fb70e629a6526e460b'
@@ -29,6 +34,7 @@ Feature: Preconditions for boards api tests
     * def json = response
     * def idCreatedList = get json.id
 
+ # Scenario: Create 2 Cards
 
     Given path 'cards/'
     And form field name = cardNameRandom
@@ -52,6 +58,18 @@ Feature: Preconditions for boards api tests
     * def resBody2 = response
     * def idCreatedCard2 = get resBody2.id
 
+    #Scenario: Update a Card
+
+    Given path 'cards/' + idCreatedCard
+    And param name = 'Updated name'
+    And form field key = 'ba510fa50e0070fb70e629a6526e460b'
+    And form field token = '3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93'
+    And request ''
+    When method put
+    Then status 200
+
+  #  Scenario: Delete Cards
+
     Given path 'cards/' + idCreatedCard
     And form field key = 'ba510fa50e0070fb70e629a6526e460b'
     And form field token = '3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93'
@@ -63,6 +81,8 @@ Feature: Preconditions for boards api tests
     And form field token = '3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93'
     When method delete
     Then status 200
+
+   #   Scenario: Delete Board
 
     Given path 'boards/' + idCreatedBoard
     And form field key = 'ba510fa50e0070fb70e629a6526e460b'
