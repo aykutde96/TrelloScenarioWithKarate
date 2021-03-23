@@ -1,0 +1,574 @@
+16:48:31.730 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:48:31.792 [print]
+16:48:32.157 request:
+1 > POST https://api.trello.com/1/boards
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 127
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: api.trello.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_282)
+name=adeBoardKarate&key=ba510fa50e0070fb70e629a6526e460b&token=3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93
+
+16:48:32.913 response time in milliseconds: 753,92
+1 < 200
+1 < Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+1 < Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
+1 < Atl-Traceid: 3159004a8dd4151c
+1 < Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 23 Mar 2021 13:48:32 GMT
+1 < Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
+1 < Expires: Thu, 01 Jan 1970 00:00:00
+1 < Pragma: no-cache
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: globaledge-envoy
+1 < Strict-Transport-Security: max-age=63072000; preload
+1 < Surrogate-Control: no-store
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Envoy-Upstream-Service-Time: 214
+1 < X-Frame-Options: DENY
+1 < X-Logging-Id: 7a01fdce-4547-49f0-9059-3b05dad7c9ba
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Rate-Limit-Action-Interval-Ms: 3600000
+1 < X-Rate-Limit-Action-Max: 15000
+1 < X-Rate-Limit-Action-Remaining: 14999
+1 < X-Rate-Limit-Api-Key-Interval-Ms: 10000
+1 < X-Rate-Limit-Api-Key-Max: 300
+1 < X-Rate-Limit-Api-Key-Remaining: 299
+1 < X-Rate-Limit-Api-Token-Interval-Ms: 10000
+1 < X-Rate-Limit-Api-Token-Max: 100
+1 < X-Rate-Limit-Api-Token-Remaining: 99
+1 < X-Rate-Limit-Member-Interval-Ms: 10000
+1 < X-Rate-Limit-Member-Max: 200
+1 < X-Rate-Limit-Member-Remaining: 199
+1 < X-Server-Time: 1616507312839
+1 < X-Trello-Api-Org-Selected: true
+1 < X-Trello-Environment: Production
+1 < X-Trello-Version: 1.2387.0
+1 < X-Xss-Protection: 1; mode=block
+{"id":"6059f1b0c0aada5b10d508de","name":"adeBoardKarate","desc":"","descData":null,"closed":false,"idOrganization":"6054f93f92789370f4c4dac9","idEnterprise":null,"pinned":false,"url":"https://trello.com/b/zNlht8xV/adeboardkarate","shortUrl":"https://trello.com/b/zNlht8xV","prefs":{"permissionLevel":"private","hideVotes":false,"voting":"disabled","comments":"members","invitations":"members","selfJoin":true,"cardCovers":true,"isTemplate":false,"cardAging":"regular","calendarFeedEnabled":false,"background":"blue","backgroundImage":null,"backgroundImageScaled":null,"backgroundTile":false,"backgroundBrightness":"dark","backgroundColor":"#0079BF","backgroundBottomColor":"#0079BF","backgroundTopColor":"#0079BF","canBePublic":true,"canBeEnterprise":true,"canBeOrg":true,"canBePrivate":true,"canInvite":true},"labelNames":{"green":"","yellow":"","orange":"","red":"","purple":"","blue":"","sky":"","lime":"","pink":"","black":""},"limits":{}}
+
+16:48:32.917 [print] {
+  "id": "6059f1b0c0aada5b10d508de",
+  "name": "adeBoardKarate",
+  "desc": "",
+  "descData": null,
+  "closed": false,
+  "idOrganization": "6054f93f92789370f4c4dac9",
+  "idEnterprise": null,
+  "pinned": false,
+  "url": "https://trello.com/b/zNlht8xV/adeboardkarate",
+  "shortUrl": "https://trello.com/b/zNlht8xV",
+  "prefs": {
+    "permissionLevel": "private",
+    "hideVotes": false,
+    "voting": "disabled",
+    "comments": "members",
+    "invitations": "members",
+    "selfJoin": true,
+    "cardCovers": true,
+    "isTemplate": false,
+    "cardAging": "regular",
+    "calendarFeedEnabled": false,
+    "background": "blue",
+    "backgroundImage": null,
+    "backgroundImageScaled": null,
+    "backgroundTile": false,
+    "backgroundBrightness": "dark",
+    "backgroundColor": "#0079BF",
+    "backgroundBottomColor": "#0079BF",
+    "backgroundTopColor": "#0079BF",
+    "canBePublic": true,
+    "canBeEnterprise": true,
+    "canBeOrg": true,
+    "canBePrivate": true,
+    "canInvite": true
+  },
+  "labelNames": {
+    "green": "",
+    "yellow": "",
+    "orange": "",
+    "red": "",
+    "purple": "",
+    "blue": "",
+    "sky": "",
+    "lime": "",
+    "pink": "",
+    "black": ""
+  },
+  "limits": {
+  }
+}
+
+16:48:32.922 [print]
+16:48:32.923 request:
+2 > POST https://api.trello.com/1/boards/6059f1b0c0aada5b10d508de/lists
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 126
+2 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2 > Host: api.trello.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_282)
+name=adeListKarate&key=ba510fa50e0070fb70e629a6526e460b&token=3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93
+
+16:48:33.450 response time in milliseconds: 525,75
+2 < 200
+2 < Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+2 < Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+2 < Access-Control-Allow-Origin: *
+2 < Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
+2 < Atl-Traceid: b3c68e64be201261
+2 < Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Tue, 23 Mar 2021 13:48:33 GMT
+2 < Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
+2 < Expires: Thu, 01 Jan 1970 00:00:00
+2 < Pragma: no-cache
+2 < Referrer-Policy: strict-origin-when-cross-origin
+2 < Server: globaledge-envoy
+2 < Strict-Transport-Security: max-age=63072000; preload
+2 < Surrogate-Control: no-store
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Dns-Prefetch-Control: off
+2 < X-Download-Options: noopen
+2 < X-Envoy-Upstream-Service-Time: 336
+2 < X-Frame-Options: DENY
+2 < X-Logging-Id: 7a01fdce-4547-49f0-9059-3b05dad7c9ba
+2 < X-Permitted-Cross-Domain-Policies: none
+2 < X-Rate-Limit-Action-Interval-Ms: 3600000
+2 < X-Rate-Limit-Action-Max: 15000
+2 < X-Rate-Limit-Action-Remaining: 14999
+2 < X-Rate-Limit-Api-Key-Interval-Ms: 10000
+2 < X-Rate-Limit-Api-Key-Max: 300
+2 < X-Rate-Limit-Api-Key-Remaining: 298
+2 < X-Rate-Limit-Api-Token-Interval-Ms: 10000
+2 < X-Rate-Limit-Api-Token-Max: 100
+2 < X-Rate-Limit-Api-Token-Remaining: 98
+2 < X-Rate-Limit-Member-Interval-Ms: 10000
+2 < X-Rate-Limit-Member-Max: 200
+2 < X-Rate-Limit-Member-Remaining: 197
+2 < X-Server-Time: 1616507313403
+2 < X-Trello-Environment: Production
+2 < X-Trello-Version: 1.2387.0
+2 < X-Xss-Protection: 1; mode=block
+{"id":"6059f1b16144c1232b94fa9e","name":"adeListKarate","closed":false,"pos":8192,"idBoard":"6059f1b0c0aada5b10d508de","limits":{}}
+
+16:48:33.450 [print] {
+  "id": "6059f1b16144c1232b94fa9e",
+  "name": "adeListKarate",
+  "closed": false,
+  "pos": 8192,
+  "idBoard": "6059f1b0c0aada5b10d508de",
+  "limits": {
+  }
+}
+
+16:48:33.454 request:
+3 > POST https://api.trello.com/1/cards/
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Content-Length: 158
+3 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+3 > Host: api.trello.com
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_282)
+name=adeCardKarate&idList=6059f1b16144c1232b94fa9e&key=ba510fa50e0070fb70e629a6526e460b&token=3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93
+
+16:48:33.895 response time in milliseconds: 438,45
+3 < 200
+3 < Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+3 < Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+3 < Access-Control-Allow-Origin: *
+3 < Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
+3 < Atl-Traceid: 0edc9399d8a2ddcf
+3 < Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+3 < Content-Type: application/json; charset=utf-8
+3 < Date: Tue, 23 Mar 2021 13:48:33 GMT
+3 < Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
+3 < Expires: Thu, 01 Jan 1970 00:00:00
+3 < Pragma: no-cache
+3 < Referrer-Policy: strict-origin-when-cross-origin
+3 < Server: globaledge-envoy
+3 < Strict-Transport-Security: max-age=63072000; preload
+3 < Surrogate-Control: no-store
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Dns-Prefetch-Control: off
+3 < X-Download-Options: noopen
+3 < X-Envoy-Upstream-Service-Time: 226
+3 < X-Frame-Options: DENY
+3 < X-Logging-Id: 7a01fdce-4547-49f0-9059-3b05dad7c9ba
+3 < X-Permitted-Cross-Domain-Policies: none
+3 < X-Rate-Limit-Action-Interval-Ms: 3600000
+3 < X-Rate-Limit-Action-Max: 15000
+3 < X-Rate-Limit-Action-Remaining: 14999
+3 < X-Rate-Limit-Api-Key-Interval-Ms: 10000
+3 < X-Rate-Limit-Api-Key-Max: 300
+3 < X-Rate-Limit-Api-Key-Remaining: 297
+3 < X-Rate-Limit-Api-Token-Interval-Ms: 10000
+3 < X-Rate-Limit-Api-Token-Max: 100
+3 < X-Rate-Limit-Api-Token-Remaining: 97
+3 < X-Rate-Limit-Member-Interval-Ms: 10000
+3 < X-Rate-Limit-Member-Max: 200
+3 < X-Rate-Limit-Member-Remaining: 196
+3 < X-Server-Time: 1616507313836
+3 < X-Trello-Environment: Production
+3 < X-Trello-Version: 1.2387.0
+3 < X-Xss-Protection: 1; mode=block
+{"id":"6059f1b118da836dd6712018","checkItemStates":[],"closed":false,"dateLastActivity":"2021-03-23T13:48:33.770Z","desc":"","descData":{"emoji":{}},"dueReminder":null,"idBoard":"6059f1b0c0aada5b10d508de","idList":"6059f1b16144c1232b94fa9e","idMembersVoted":[],"idShort":1,"idAttachmentCover":null,"idLabels":[],"manualCoverAttachment":false,"name":"adeCardKarate","pos":16384,"shortLink":"gPwe0Qkn","isTemplate":false,"cardRole":null,"dueComplete":false,"due":null,"email":null,"labels":[],"shortUrl":"https://trello.com/c/gPwe0Qkn","start":null,"url":"https://trello.com/c/gPwe0Qkn/1-adecardkarate","cover":{"idAttachment":null,"color":null,"idUploadedBackground":null,"size":"normal","brightness":"light","idPlugin":null},"idMembers":[],"idChecklists":[],"attachments":[],"badges":{"attachmentsByType":{"trello":{"board":0,"card":0}},"location":false,"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"checkItemsEarliestDue":null,"comments":0,"attachments":0,"description":false,"due":null,"dueComplete":false,"start":null},"subscribed":false,"stickers":[],"limits":{}}
+
+16:48:33.897 [print] {
+  "id": "6059f1b118da836dd6712018",
+  "checkItemStates": [
+  ],
+  "closed": false,
+  "dateLastActivity": "2021-03-23T13:48:33.770Z",
+  "desc": "",
+  "descData": {
+    "emoji": {
+    }
+  },
+  "dueReminder": null,
+  "idBoard": "6059f1b0c0aada5b10d508de",
+  "idList": "6059f1b16144c1232b94fa9e",
+  "idMembersVoted": [
+  ],
+  "idShort": 1,
+  "idAttachmentCover": null,
+  "idLabels": [
+  ],
+  "manualCoverAttachment": false,
+  "name": "adeCardKarate",
+  "pos": 16384,
+  "shortLink": "gPwe0Qkn",
+  "isTemplate": false,
+  "cardRole": null,
+  "dueComplete": false,
+  "due": null,
+  "email": null,
+  "labels": [
+  ],
+  "shortUrl": "https://trello.com/c/gPwe0Qkn",
+  "start": null,
+  "url": "https://trello.com/c/gPwe0Qkn/1-adecardkarate",
+  "cover": {
+    "idAttachment": null,
+    "color": null,
+    "idUploadedBackground": null,
+    "size": "normal",
+    "brightness": "light",
+    "idPlugin": null
+  },
+  "idMembers": [
+  ],
+  "idChecklists": [
+  ],
+  "attachments": [
+  ],
+  "badges": {
+    "attachmentsByType": {
+      "trello": {
+        "board": 0,
+        "card": 0
+      }
+    },
+    "location": false,
+    "votes": 0,
+    "viewingMemberVoted": false,
+    "subscribed": false,
+    "fogbugz": "",
+    "checkItems": 0,
+    "checkItemsChecked": 0,
+    "checkItemsEarliestDue": null,
+    "comments": 0,
+    "attachments": 0,
+    "description": false,
+    "due": null,
+    "dueComplete": false,
+    "start": null
+  },
+  "subscribed": false,
+  "stickers": [
+  ],
+  "limits": {
+  }
+}
+
+16:48:33.903 request:
+4 > POST https://api.trello.com/1/cards/
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Content-Length: 159
+4 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+4 > Host: api.trello.com
+4 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_282)
+name=adeCardKarate2&idList=6059f1b16144c1232b94fa9e&key=ba510fa50e0070fb70e629a6526e460b&token=3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93
+
+16:48:34.345 response time in milliseconds: 439,96
+4 < 200
+4 < Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+4 < Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+4 < Access-Control-Allow-Origin: *
+4 < Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
+4 < Atl-Traceid: ca09ca5ea5800a77
+4 < Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+4 < Content-Type: application/json; charset=utf-8
+4 < Date: Tue, 23 Mar 2021 13:48:34 GMT
+4 < Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
+4 < Expires: Thu, 01 Jan 1970 00:00:00
+4 < Pragma: no-cache
+4 < Referrer-Policy: strict-origin-when-cross-origin
+4 < Server: globaledge-envoy
+4 < Strict-Transport-Security: max-age=63072000; preload
+4 < Surrogate-Control: no-store
+4 < Transfer-Encoding: chunked
+4 < X-Content-Type-Options: nosniff
+4 < X-Dns-Prefetch-Control: off
+4 < X-Download-Options: noopen
+4 < X-Envoy-Upstream-Service-Time: 222
+4 < X-Frame-Options: DENY
+4 < X-Logging-Id: 7a01fdce-4547-49f0-9059-3b05dad7c9ba
+4 < X-Permitted-Cross-Domain-Policies: none
+4 < X-Rate-Limit-Action-Interval-Ms: 3600000
+4 < X-Rate-Limit-Action-Max: 15000
+4 < X-Rate-Limit-Action-Remaining: 14999
+4 < X-Rate-Limit-Api-Key-Interval-Ms: 10000
+4 < X-Rate-Limit-Api-Key-Max: 300
+4 < X-Rate-Limit-Api-Key-Remaining: 296
+4 < X-Rate-Limit-Api-Token-Interval-Ms: 10000
+4 < X-Rate-Limit-Api-Token-Max: 100
+4 < X-Rate-Limit-Api-Token-Remaining: 96
+4 < X-Rate-Limit-Member-Interval-Ms: 10000
+4 < X-Rate-Limit-Member-Max: 200
+4 < X-Rate-Limit-Member-Remaining: 195
+4 < X-Server-Time: 1616507314282
+4 < X-Trello-Environment: Production
+4 < X-Trello-Version: 1.2387.0
+4 < X-Xss-Protection: 1; mode=block
+{"id":"6059f1b22e07258fcba537d9","checkItemStates":[],"closed":false,"dateLastActivity":"2021-03-23T13:48:34.211Z","desc":"","descData":{"emoji":{}},"dueReminder":null,"idBoard":"6059f1b0c0aada5b10d508de","idList":"6059f1b16144c1232b94fa9e","idMembersVoted":[],"idShort":2,"idAttachmentCover":null,"idLabels":[],"manualCoverAttachment":false,"name":"adeCardKarate2","pos":32768,"shortLink":"jaSrDUlF","isTemplate":false,"cardRole":null,"dueComplete":false,"due":null,"email":null,"labels":[],"shortUrl":"https://trello.com/c/jaSrDUlF","start":null,"url":"https://trello.com/c/jaSrDUlF/2-adecardkarate2","cover":{"idAttachment":null,"color":null,"idUploadedBackground":null,"size":"normal","brightness":"light","idPlugin":null},"idMembers":[],"idChecklists":[],"badges":{"attachmentsByType":{"trello":{"board":0,"card":0}},"location":false,"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"checkItemsEarliestDue":null,"comments":0,"attachments":0,"description":false,"due":null,"dueComplete":false,"start":null},"subscribed":false,"attachments":[],"stickers":[],"limits":{}}
+
+16:48:34.348 [print] {
+  "id": "6059f1b22e07258fcba537d9",
+  "checkItemStates": [
+  ],
+  "closed": false,
+  "dateLastActivity": "2021-03-23T13:48:34.211Z",
+  "desc": "",
+  "descData": {
+    "emoji": {
+    }
+  },
+  "dueReminder": null,
+  "idBoard": "6059f1b0c0aada5b10d508de",
+  "idList": "6059f1b16144c1232b94fa9e",
+  "idMembersVoted": [
+  ],
+  "idShort": 2,
+  "idAttachmentCover": null,
+  "idLabels": [
+  ],
+  "manualCoverAttachment": false,
+  "name": "adeCardKarate2",
+  "pos": 32768,
+  "shortLink": "jaSrDUlF",
+  "isTemplate": false,
+  "cardRole": null,
+  "dueComplete": false,
+  "due": null,
+  "email": null,
+  "labels": [
+  ],
+  "shortUrl": "https://trello.com/c/jaSrDUlF",
+  "start": null,
+  "url": "https://trello.com/c/jaSrDUlF/2-adecardkarate2",
+  "cover": {
+    "idAttachment": null,
+    "color": null,
+    "idUploadedBackground": null,
+    "size": "normal",
+    "brightness": "light",
+    "idPlugin": null
+  },
+  "idMembers": [
+  ],
+  "idChecklists": [
+  ],
+  "badges": {
+    "attachmentsByType": {
+      "trello": {
+        "board": 0,
+        "card": 0
+      }
+    },
+    "location": false,
+    "votes": 0,
+    "viewingMemberVoted": false,
+    "subscribed": false,
+    "fogbugz": "",
+    "checkItems": 0,
+    "checkItemsChecked": 0,
+    "checkItemsEarliestDue": null,
+    "comments": 0,
+    "attachments": 0,
+    "description": false,
+    "due": null,
+    "dueComplete": false,
+    "start": null
+  },
+  "subscribed": false,
+  "attachments": [
+  ],
+  "stickers": [
+  ],
+  "limits": {
+  }
+}
+
+16:48:34.366 request:
+5 > PUT https://api.trello.com/1/cards/6059f1b118da836dd6712018
+5 > Accept-Encoding: gzip,deflate
+5 > Connection: Keep-Alive
+5 > Content-Length: 107
+5 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+5 > Host: api.trello.com
+5 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_282)
+key=ba510fa50e0070fb70e629a6526e460b&token=3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93
+
+16:48:34.708 response time in milliseconds: 341,21
+5 < 200
+5 < Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+5 < Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+5 < Access-Control-Allow-Origin: *
+5 < Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
+5 < Atl-Traceid: 20de84f373d9ddf9
+5 < Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+5 < Content-Type: application/json; charset=utf-8
+5 < Date: Tue, 23 Mar 2021 13:48:34 GMT
+5 < Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
+5 < Expires: Thu, 01 Jan 1970 00:00:00
+5 < Pragma: no-cache
+5 < Referrer-Policy: strict-origin-when-cross-origin
+5 < Server: globaledge-envoy
+5 < Strict-Transport-Security: max-age=63072000; preload
+5 < Surrogate-Control: no-store
+5 < Transfer-Encoding: chunked
+5 < X-Content-Type-Options: nosniff
+5 < X-Dns-Prefetch-Control: off
+5 < X-Download-Options: noopen
+5 < X-Envoy-Upstream-Service-Time: 130
+5 < X-Frame-Options: DENY
+5 < X-Logging-Id: 7a01fdce-4547-49f0-9059-3b05dad7c9ba
+5 < X-Permitted-Cross-Domain-Policies: none
+5 < X-Rate-Limit-Action-Interval-Ms: 3600000
+5 < X-Rate-Limit-Action-Max: 15000
+5 < X-Rate-Limit-Action-Remaining: 14999
+5 < X-Rate-Limit-Api-Key-Interval-Ms: 10000
+5 < X-Rate-Limit-Api-Key-Max: 300
+5 < X-Rate-Limit-Api-Key-Remaining: 295
+5 < X-Rate-Limit-Api-Token-Interval-Ms: 10000
+5 < X-Rate-Limit-Api-Token-Max: 100
+5 < X-Rate-Limit-Api-Token-Remaining: 95
+5 < X-Rate-Limit-Member-Interval-Ms: 10000
+5 < X-Rate-Limit-Member-Max: 200
+5 < X-Rate-Limit-Member-Remaining: 194
+5 < X-Server-Time: 1616507314657
+5 < X-Trello-Environment: Production
+5 < X-Trello-Version: 1.2387.0
+5 < X-Xss-Protection: 1; mode=block
+{"id":"6059f1b118da836dd6712018","checkItemStates":[],"closed":false,"dateLastActivity":"2021-03-23T13:48:33.770Z","desc":"","descData":null,"dueReminder":null,"idBoard":"6059f1b0c0aada5b10d508de","idList":"6059f1b16144c1232b94fa9e","idMembersVoted":[],"idShort":1,"idAttachmentCover":null,"idLabels":[],"manualCoverAttachment":false,"name":"adeCardKarate","pos":16384,"shortLink":"gPwe0Qkn","isTemplate":false,"cardRole":null,"dueComplete":false,"due":null,"email":null,"labels":[],"shortUrl":"https://trello.com/c/gPwe0Qkn","start":null,"url":"https://trello.com/c/gPwe0Qkn/1-adecardkarate","cover":{"idAttachment":null,"color":null,"idUploadedBackground":null,"size":"normal","brightness":"light","idPlugin":null},"idMembers":[],"badges":{"attachmentsByType":{"trello":{"board":0,"card":0}},"location":false,"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"checkItemsEarliestDue":null,"comments":0,"attachments":0,"description":false,"due":null,"dueComplete":false,"start":null},"subscribed":false,"idChecklists":[]}
+
+
+ GMT
+6 < Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
+6 < Expires: Thu, 01 Jan 1970 00:00:00
+6 < Pragma: no-cache
+6 < Referrer-Policy: strict-origin-when-cross-origin
+6 < Server: globaledge-envoy
+6 < Strict-Transport-Security: max-age=63072000; preload
+6 < Surrogate-Control: no-store
+6 < Transfer-Encoding: chunked
+6 < X-Content-Type-Options: nosniff
+6 < X-Dns-Prefetch-Control: off
+6 < X-Download-Options: noopen
+6 < X-Envoy-Upstream-Service-Time: 256
+6 < X-Frame-Options: DENY
+6 < X-Logging-Id: 7a01fdce-4547-49f0-9059-3b05dad7c9ba
+6 < X-Permitted-Cross-Domain-Policies: none
+6 < X-Rate-Limit-Action-Interval-Ms: 3600000
+6 < X-Rate-Limit-Action-Max: 15000
+6 < X-Rate-Limit-Action-Remaining: 14999
+6 < X-Rate-Limit-Api-Key-Interval-Ms: 10000
+6 < X-Rate-Limit-Api-Key-Max: 300
+6 < X-Rate-Limit-Api-Key-Remaining: 294
+6 < X-Rate-Limit-Api-Token-Interval-Ms: 10000
+6 < X-Rate-Limit-Api-Token-Max: 100
+6 < X-Rate-Limit-Api-Token-Remaining: 94
+6 < X-Rate-Limit-Member-Interval-Ms: 10000
+6 < X-Rate-Limit-Member-Max: 200
+6 < X-Rate-Limit-Member-Remaining: 193
+6 < X-Server-Time: 1616507187563
+6 < X-Trello-Environment: Production
+6 < X-Trello-Version: 1.2387.0
+6 < X-Xss-Protection: 1; mode=block
+{"limits":{}}
+
+16:45:34.092 request:
+7 > DELETE https://api.trello.com/1/boards/6059f0fbfc56d03808d4203f
+7 > Accept-Encoding: gzip,deflate
+7 > Connection: Keep-Alive
+7 > Content-Length: 107
+7 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+7 > Host: api.trello.com
+7 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_282)
+key=ba510fa50e0070fb70e629a6526e460b&token=3286f41172d51526afe89a2dab31be4ccc760618f4ec97618be70bddc2aebd93
+
+16:45:34.647 response time in milliseconds: 553,06
+7 < 200
+7 < Access-Control-Allow-Headers: Authorization, Accept, Content-Type
+7 < Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+7 < Access-Control-Allow-Origin: *
+7 < Access-Control-Expose-Headers: x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining
+7 < Atl-Traceid: f505ce414556bd51
+7 < Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+7 < Content-Type: application/json; charset=utf-8
+7 < Date: Tue, 23 Mar 2021 13:45:34 GMT
+7 < Expect-Ct: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400
+7 < Expires: Thu, 01 Jan 1970 00:00:00
+7 < Pragma: no-cache
+7 < Referrer-Policy: strict-origin-when-cross-origin
+7 < Server: globaledge-envoy
+7 < Strict-Transport-Security: max-age=63072000; preload
+7 < Surrogate-Control: no-store
+7 < Transfer-Encoding: chunked
+7 < X-Content-Type-Options: nosniff
+7 < X-Dns-Prefetch-Control: off
+7 < X-Download-Options: noopen
+7 < X-Envoy-Upstream-Service-Time: 399
+7 < X-Frame-Options: DENY
+7 < X-Logging-Id: 7a01fdce-4547-49f0-9059-3b05dad7c9ba
+7 < X-Permitted-Cross-Domain-Policies: none
+7 < X-Rate-Limit-Action-Interval-Ms: 3600000
+7 < X-Rate-Limit-Action-Max: 15000
+7 < X-Rate-Limit-Action-Remaining: 14999
+7 < X-Rate-Limit-Api-Key-Interval-Ms: 10000
+7 < X-Rate-Limit-Api-Key-Max: 300
+7 < X-Rate-Limit-Api-Key-Remaining: 293
+7 < X-Rate-Limit-Api-Token-Interval-Ms: 10000
+7 < X-Rate-Limit-Api-Token-Max: 100
+7 < X-Rate-Limit-Api-Token-Remaining: 93
+7 < X-Rate-Limit-Member-Interval-Ms: 10000
+7 < X-Rate-Limit-Member-Max: 200
+7 < X-Rate-Limit-Member-Remaining: 193
+7 < X-Server-Time: 1616507134593
+7 < X-Trello-Environment: Production
+7 < X-Trello-Version: 1.2387.0
+7 < X-Xss-Protection: 1; mode=block
+{"_value":null}
+
+
